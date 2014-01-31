@@ -13,7 +13,7 @@ import android.widget.ListView;
 public class MainActivity extends Activity {
 	
 	Button new_counter;
-	public ListView counterList;
+	private ListView counterList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				try{
-					Class newCounterClass = Class.forName("ca.ualberta.homynyk_notes.MakeNewCounter");
+					Class newCounterClass = Class.forName("ca.ualberta.homynyk_notes.MakeNewCounterActivity");
 					Intent openMakeNewCounter = new Intent(MainActivity.this, newCounterClass);
 					startActivity(openMakeNewCounter);
 				} catch (ClassNotFoundException e){
@@ -49,12 +49,12 @@ public class MainActivity extends Activity {
     	
     }
 
-
+/*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-    
+  */  
 }

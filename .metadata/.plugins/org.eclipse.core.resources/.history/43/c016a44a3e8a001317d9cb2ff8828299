@@ -1,0 +1,22 @@
+package ca.ualberta.homynyk_notes;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+
+public class MakeNewCounterActivity extends Activity {
+	private EditText nameText;
+	private ListView counterList;
+	
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.make_new_counter_activity);
+		nameText = (EditText)findViewById(R.id.body);
+		Button saveButton = (Button)findViewById(R.id.save);
+		counterList=(ListView)findViewById(R.id.counterList);
+		
+	}
+
+}

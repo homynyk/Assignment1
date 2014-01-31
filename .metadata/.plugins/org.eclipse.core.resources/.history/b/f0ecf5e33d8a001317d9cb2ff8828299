@@ -1,0 +1,16 @@
+package ca.ualberta.homynyk_notes;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.ListView;
+
+public class MakeNewCounterActivity extends Activity {
+	private EditText nameText;
+	private ListView CounterList;
+	
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+	}
+
+}

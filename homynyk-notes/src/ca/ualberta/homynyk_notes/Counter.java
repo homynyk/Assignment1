@@ -1,7 +1,10 @@
 package ca.ualberta.homynyk_notes;
 
-public class Counter {
+import java.io.Serializable;
+
+public class Counter implements Serializable {
 	
+	private static final long serialVersionUID = 1L;
 	private String name;
 	private int value;
 
@@ -9,6 +12,12 @@ public class Counter {
 		super();
 		this.name=name;
 		this.value=value;
+	}
+	
+	public Counter (String name){
+		super();
+		this.name=name;
+		value=0;
 	}
 	
 	public Counter (){
