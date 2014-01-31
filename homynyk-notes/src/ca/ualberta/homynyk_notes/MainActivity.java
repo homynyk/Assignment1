@@ -3,13 +3,24 @@ package ca.ualberta.homynyk_notes;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.widget.Button;
+import android.widget.ListView;
 
 public class MainActivity extends Activity {
+	
+	Button new_counter;
+	public ListView CounterList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        CounterList = (ListView)findViewById(R.id.counterList);
+    }
+    
+    protected void onStart() {
+    	super.onStart();
+    	
     }
 
 
