@@ -3,6 +3,7 @@ package ca.ualberta.homynyk_notes;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -20,6 +21,8 @@ public class MainActivity extends Activity {
     
     protected void onStart() {
     	super.onStart();
+    	Counter counter = new Counter("Test", 0);
+    	ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_item);
     	
     }
 
